@@ -374,9 +374,15 @@
   "version" "2.0.1"
 
 "caniuse-lite@^1.0.30001370", "caniuse-lite@^1.0.30001373":
+<<<<<<< HEAD
+  "integrity" "sha512-2rtJwDmSZ716Pxm1wCtbPvHtbDWAreTPxXbkc5RkKglow3Ig/4GNGazDI9/BVnXbG/wnv6r3B5FEbkfg9OcTGg=="
+  "resolved" "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001382.tgz"
+  "version" "1.0.30001382"
+=======
   "integrity" "sha512-fEnkDOKpvp6qc+olg7+NzE1SqyfiyKf4uci7fAU38M3zxs0YOyKOxW/nMZ2l9sJbt7KZHcDIxUnbI0Iime7V4w=="
   "resolved" "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001381.tgz"
   "version" "1.0.30001381"
+>>>>>>> d1499e8f673cf67072c3a686bc6194d0b7bb3673
 
 "caseless@~0.12.0":
   "integrity" "sha1-G2gcIf+EAzyCZUMJBolCDRhxUdw= sha512-4tYFyifaFfGacoiObjJegolkwSU4xQNGbVgUiNYVUxbQ2x2lUsFvY4hVgVzGiIe6WLOPqycWXA40l+PWsxthUw=="
@@ -623,9 +629,15 @@
     "safer-buffer" "^2.1.0"
 
 "electron-to-chromium@^1.4.202":
+<<<<<<< HEAD
+  "integrity" "sha512-I9VVajA3oswIJOUFg2PSBqrHLF5Y+ahIfjOV9+v6uYyBqFZutmPxA6fxocDUUmgwYevRWFu1VjLyVG3w45qa/g=="
+  "resolved" "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.4.227.tgz"
+  "version" "1.4.227"
+=======
   "integrity" "sha512-ICHvGaCIQR3P88uK8aRtx8gmejbVJyC6bB4LEC3anzBrIzdzC7aiZHY4iFfXhN4st6I7lMO0x4sgBHf/7kBvRw=="
   "resolved" "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.4.225.tgz"
   "version" "1.4.225"
+>>>>>>> d1499e8f673cf67072c3a686bc6194d0b7bb3673
 
 "encoding@^0.1.12":
   "integrity" "sha512-ETBauow1T35Y/WZMkio9jiM0Z5xjHHmJ4XmjZOq1l/dXz3lr2sRn87nJy20RupqSh1F2m3HHPSp8ShIPQJrJ3A=="
