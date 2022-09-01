@@ -9,8 +9,8 @@ class Coordenadas {
  const coordBarcelona = new Coordenadas(41.38879, 2.15899)
  const coordSevilla = new Coordenadas(37.38283, -5.97317)
 
- async function recibirDatos(ciudad){
-   const url = `https://api.openweathermap.org/data/2.5/weather?lat=${ciudad.lat}&lon=${ciudad.lon}&appid=ba153d43089f4c0ea95b1e1e900303c5`
+ async function recibirDatos(coord){
+   const url = `https://api.openweathermap.org/data/2.5/weather?lat=${coord.lat}&lon=${coord.lon}&appid=ba153d43089f4c0ea95b1e1e900303c5`
    const response = await fetch(url);
    const datos = response.json();
    return datos;
