@@ -19,6 +19,9 @@ class Coordenadas {
 const madrid = await recibirDatos(coordMadrid);
 const barcelona = await recibirDatos(coordBarcelona);
 const sevilla = await  recibirDatos(coordSevilla);
+madrid.name = 'Madrid'
+barcelona.name = 'Barcelona'
+sevilla.name = 'Sevilla'
 
 function kelvinToCelsius(kelvin){
    const celsius = kelvin - 273.15
@@ -27,16 +30,30 @@ function kelvinToCelsius(kelvin){
 
 
 const container = document.getElementById('container')
+container.style.padding = '10px'
+const nombre = document.createElement('div')
+const temp = document.createElement('div')
+container.append(nombre, temp)
 
 function mostrarDatos(ciudad){
-   const cuadro = document.createElement('div')
-   const temp = document.createTextNode(`Temperatrura: ${Math.round(kelvinToCelsius(ciudad.main.temp))}º`);
-   cuadro.appendChild(temp)
-   container.appendChild(cuadro)
+   nombre.innerText = `Ciudad: ${ciudad.name}`
+   temp.innerText = `Temperatrura: ${Math.round(kelvinToCelsius(ciudad.main.temp))}º`;
 }
 
+const datosMadrid = () => mostrarDatos(madrid)
+const datosBarcelona = () => mostrarDatos(barcelona)
+const datosSevilla = () => mostrarDatos(sevilla)
+
+
+
 const botonMadrid = document.getElementById('boton-madrid');
-botonMadrid.addEventListener('click', alert('Hola'))
+botonMadrid.addEventListener('click', datosMadrid)
+
+const botonBarcelona = document.getElementById('boton-barcelona');
+botonBarcelona.addEventListener('click', datosBarcelona)
+
+const botonSevilla = document.getElementById('boton-sevilla');
+botonSevilla.addEventListener('click', datosSevilla)
 
 
 
