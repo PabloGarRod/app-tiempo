@@ -29,13 +29,17 @@ function kelvinToCelsius(kelvin){
 }
 
 
+
 const container = document.getElementById('container')
 container.style.padding = '10px'
+const icono = document.createElement('img')
 const nombre = document.createElement('div')
 const temp = document.createElement('div')
-container.append(nombre, temp)
+container.append(icono, nombre, temp)
 
 function mostrarDatos(ciudad){
+   const iconURL = `http://openweathermap.org/img/w/${ciudad.weather[0].icon}.png`
+   icono.src = iconURL
    nombre.innerText = `Ciudad: ${ciudad.name}`
    temp.innerText = `Temperatrura: ${Math.round(kelvinToCelsius(ciudad.main.temp))}º`;
 }
@@ -54,7 +58,6 @@ botonBarcelona.addEventListener('click', datosBarcelona)
 
 const botonSevilla = document.getElementById('boton-sevilla');
 botonSevilla.addEventListener('click', datosSevilla)
-
 
 
 
